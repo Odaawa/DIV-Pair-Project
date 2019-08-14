@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc-4-All</title>
+	<link rel="stylesheet" type="text/css" href="..\css_files\index.css">
+</head>
+
+<body>
+<div id="main_body">
+	<header>
+		<div id="main_header">
+			<h1>Calc-4-All</h1>
+		</div>		
+	</header>
+	<aside>
+		<div id="right_aside">
+			<button class="button" id="active">
+				<a href="#">Basic Calc</a>
+				<p> +, -, /, *</p>
+			</button>
+			<button class="button">
+				<a href="#">Unit Converter</a>
+				<p> Imperial - SI</p>
+				<p> SI - Imperial</p>
+			</button>
+			<button class="button">
+				<a href="#">BMI Calc</a>
+				<p>Check out your BMI Status</p>
+			</button>
+			<button class="button">
+				<a href="#">Trig</a>
+				<p>cos, sin, tan</p>
+			</button>
+			<button class="button">
+			<a href="#">Interest Finder</a>
+				<p>Find out how much your savings is worth</p>
+			</button>
+	    </div>
+	</aside>
+	<main>
+		<div id="content">
+			<form name="case">
+			    <input name="display" id="display" value=""> <!-- this is display area -->
+
+			    <input type="button" class="digit" value="one" onclick="run1()"> <!-- value is for what appears on button -->
+			    <input type="button" class="digit" value="two" onclick="run2()">
+			    <input type="button" class="digit" value="three" onclick="run3()">
+			    <input type="button" id="plus" 	class="oper" 	value="+"  onclick="runPlus()">
+
+			    <input type="button" class="digit" value="four" onclick="run4()">
+			    <input type="button" class="digit" value="five" onclick="run5()">
+			    <input type="button" class="digit" value="six" onclick="run6()">
+			    <input type="button" id="minus" 	class="oper" 	value="-" onclick="runMinus()" >
+
+			    <input type="button" class="digit" value="seven" onclick="run7()">
+			    <input type="button" class="digit" value="eight" onclick="run8()">
+			    <input type="button" class="digit" value="nine" onclick="run9()">
+			    <input type="button" id="divide" 	class="oper" 	value="/" onclick="runDivide()" >
+			    
+			    <input type="button" class="digit" value="zero" onclick="run0()">
+			    <input type="button" id="clearMem" class="oper" value="C" onclick="runC()">
+			    
+			 
+				<input type="button" id="equal" 	class="oper"	value="=" onclick="runEquals()">
+			    <input type="button" id="multiply" 	class="oper" 	value="*" onclick="runMultiply()">
+			  </form>			
+		</div>
+	</main>
+	<footer>
+		
+	</footer>
+</div>
+	<script type="text/javascript" src="../js_files/index.js"></script>
+</body>
+</html>
