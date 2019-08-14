@@ -48,15 +48,14 @@ body{
 	color: teal;
 }
 
-#content{
+form{
 	position: absolute;
     top: 50px;
     bottom: 0;
     right: 0;
     left: 0;
     height: 400px;
-    width: 500px;
-    
+    width: 500px;  
 	text-align: center;
 	padding: 7px;    
     margin: auto;
@@ -77,10 +76,12 @@ body{
 	font-size: 1.5rem;
 	background-color: #fff;
 	color: #333;
+	font-family: cursive;
 }
 
 .digit {
 	font-size: 2rem;
+	font-family: cursive;
 	background-color: #ccc;
 	height: 55px;
 	width: 20%;
@@ -91,6 +92,7 @@ body{
 
 .oper {
 	font-size: 2rem;
+	font-family: cursive;
 	background-color: #009999;
 	height: 55px;
 	width: 20%;
@@ -101,8 +103,10 @@ body{
 
 #clearMem {
 	background-color: crimson;
+	font-family: cursive;
 }
 
 #equal {
 	background-color: orange;
+	font-family: cursive;
 }
