@@ -1,0 +1,90 @@
+body{
+	background-color: #ccc;
+	font-family: Garamond;
+	margin: 0;
+	padding: 0;
+	/*background: url(../back_img.jpg) no-repeat center center fixed;*/
+	background-size: cover;
+}
+
+
+#main_header{
+	background-color: teal;
+	color: #fff;
+	margin: 0;
+	padding: 20px;
+	position: relative;
+}
+
+#main_header p{
+	font-size: 14px;
+}
+
+#main_header h1{
+	margin-top: 0;
+}
+
+#right_aside{
+	width: 16%;
+	background-color: #333;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: left;
+	height: 80%;
+}
+
+#main_content{
+	font-family: cursive;
+	float: left;
+	color: #fff;
+	margin: 30px;
+	text-align: center;
+	width: 60%;
+}
+
+#left_aside{
+	width: 15%;
+	background-color: #333;
+	float: left;
+	font-family: cursive;
+	height: 400px;
+	margin: 5% 0 5% 5%;
+	text-align: center;
+
+}
+
+#left_aside a{
+	text-decoration: none;
+	margin: 50px;
+	padding: 20px;
+	color: teal;
+}
+
+.button{
+	padding: 20px;
+	background-color: teal;
+	font-family: cursive;
+	color: #fff;
+	border-radius: 50px;
+	width: 200px;
+	height: 90px;
+	margin: 15px;
+	border: 2px solid #7db395;
+}
+
+.button p{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+
+.button a{
+	font-size: 20px;
+	color: #333;
+	text-decoration: none;
+}
+
+.button:hover, #active{
+	background-color: #fff;
+	color: teal;
+}
