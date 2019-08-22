@@ -1,5 +1,5 @@
 body{
-	background-color: #ccc;
+	background-color: #8aaae5;
 	font-family: Garamond;
 	margin: 0;
 	padding: 0;
@@ -7,26 +7,56 @@ body{
 	background-size: cover;
 }
 
+#main_header img{
+	float: left;
+	margin-right: 20px;
+}
 
 #main_header{
-	background-color: teal;
-	color: #fff;
+	/*background: url(../logo.jpg) no-repeat left fixed;*/
+	background-color: #243665;
+	color: #fbeaeb;
 	margin: 0;
 	padding: 20px;
 	position: relative;
 }
 
 #main_header h1{
-	margin-top: 0;
+	margin-top: 7px;
+	margin-bottom: 0;
+	float:left;
 }
 
-#main_header p{
-	font-size: 14px;
+/*list items in nav-bar*/
+#main_header li{
+	list-style: none;
+	display: inline;
+	padding: 10px;
+	margin: 20px;
+	margin-top: 0px;
+	font-size: 16px;
+	font-family: cursive;
+}
+
+#main_header a{
+	text-decoration: none;
+	color: #fbeaeb;
+}
+
+#main_header ul{
+	text-align: right;
+}
+
+/*scrolling text in header*/
+#main_header #text{
+	font-size: 16px;
+	margin-top: 0;
+	font-family: cursive;
 }
 
 #right_aside{
 	width: 16%;
-	background-color: #333;
+	background-color: #fbeaeb;
 	margin-top: 0;
 	margin-bottom: 0;
 	float: left;
@@ -35,14 +65,14 @@ body{
 
 .button{
 	padding: 20px;
-	background-color: teal;
+	background-color: #243665;
 	font-family: cursive;
 	color: #fff;
 	border-radius: 50px;
 	width: 200px;
 	height: 90px;
 	margin: 15px;
-	border: 2px solid #7db395;
+	border: 2px solid #243665;
 }
 
 .button p{
@@ -53,13 +83,13 @@ body{
 
 .button a{
 	font-size: 20px;
-	color: #333;
+	color: #8aaae5;
 	text-decoration: none;
 }
 
 .button:hover, #active{
-	background-color: #fff;
-	color: teal;
+	background-color: #fbeaeb;
+	color: #243665;
 }
 
 form{
@@ -78,12 +108,12 @@ form{
 	outline: 0;
 	font-size: 16px;
 	vertical-align: baseline;
-	background: #555;
+	background: #fbeaeb;
 }
 
 #display {
 	margin-top: 30px;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 	width: 80%;
 	height: 60px;
 	text-align: right;
@@ -96,7 +126,7 @@ form{
 .digit {
 	font-size: 2rem;
 	font-family: cursive;
-	background-color: #ccc;
+	background-color: #8aaae5;
 	height: 55px;
 	width: 20%;
 	border-radius: 20px;
@@ -109,13 +139,14 @@ form{
 .oper {
 	font-size: 2rem;
 	font-family: cursive;
-	background-color: #009999;
+	background-color: #243665;
 	height: 55px;
 	width: 20%;
 	border-radius: 20px;
 	display: inline-block;
 	padding: 5px;
 	margin-right: 5px;
+	color: #fbeaeb;
 }
 
 #clearMem {
@@ -128,4 +159,18 @@ form{
 	background-color: orange;
 	font-family: cursive;
 	margin-right: 5px;
+}
+
+
+#clear{
+	clear: both;
+}
+
+#footer{
+	margin-top: 0;
+	background-color: #243665;
+	height: 40px;
+	margin-bottom: 0;
+	color: #fbeaeb;
+
 }

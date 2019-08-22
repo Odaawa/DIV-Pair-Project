@@ -9,11 +9,16 @@
 <div id="main_body">
 	<header>
 		<div id="main_header">
+			<img src="../logo2.jpg" alt="logo" width="50" height="50">
 			<h1>Calc-4-All</h1>
-			<p>
-				Calc-4-All is a free online calculator. Here you will find Math, Trigonometry, BMI, Interest and Unit Conversions calculators. We give a little brief of the calculations. If you don't find what you need, we are always happy to consider requests for new calculators or additional features and information. Contact us for Calculator Requests and Suggestions.
-			</p>
-			<a href="contact.html">Contact Us</a>
+			<ul>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Join Us</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+			<marquee id="text">
+				Calc-4-All is a free online calculator. Here you will find Basic Arithmetic, Trigonometry, BMI, Interest and Unit Conversions calculators. Enjoy!!!
+			</marquee>
 		</div>		
 	</header>
 	<aside>
@@ -63,15 +68,23 @@
 			    
 			    <input type="button" class="digit" value="zero" onclick="run0()">
 			    <input type="button" id="clearMem" class="oper" value="C" onclick="runC()">
-			    
-			 
-				<input type="button" id="equal" 	class="oper"	value="=" onclick="runEquals()">
+			  	<input type="button" id="equal" 	class="oper"	value="=" onclick="runEquals()">
 			    <input type="button" id="multiply" 	class="oper" 	value="*" onclick="runMultiply()">
+
+			    <input type="button" id="openBracket" 	class="oper" 	value="(" onclick="runOpenBracket()">
+			    <input type="button" id="closeBracket" 	class="oper" 	value=")" onclick="runCloseBracket()">
+			    <input type="button" id="dot" 	class="oper" 	value="." onclick="runDot()">
+			    <input type="button" id="backspace" class="oper" value="<" onclick="runBackspace()">
+
+
 			  </form>			
 		</div>
 	</main>
+	<div id="clear"></div>
 	<footer>
-		
+		<div id="footer">
+			&copy;2019 Innovators
+		</div>
 	</footer>
 </div>
 	<script type="text/javascript" src="../js_files/index.js"></script>

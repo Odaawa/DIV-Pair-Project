@@ -64,6 +64,19 @@ function runC(){
 
 	document.case.display.value = ""
 };
+function runDot(){
+
+	document.case.display.value += "."
+};
+
+function runOpenBracket(){
+
+	document.case.display.value += "("
+};
+
+function runCloseBracket(){
+	document.case.display.value += ")"
+};
 
 /*The eval() function evaluates or executes an argument.
 If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements.*/
@@ -71,3 +84,13 @@ function runEquals() {
 	var equals = eval(document.case.display.value)
 	document.case.display.value = equals;
 }
+
+
+
+function runBackspace() {
+    var erase = document.getElementById("display").value;
+    document.getElementById("display").value = erase.substr(0, erase.length - 1);
+}
+//substr(start point, number of characters to be returned) - produces a substring out of the initial string 
+
+

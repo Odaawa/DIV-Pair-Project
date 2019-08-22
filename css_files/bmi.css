@@ -1,5 +1,5 @@
 body{
-	background-color: #ccc;
+	background-color: #8aaae5;
 	font-family: Garamond;
 	color: #333;
 	margin: 0;
@@ -10,12 +10,11 @@ body{
 
 
 #main_header{
-	background-color: teal;
-	color: #fff;
+	background-color: #243665;
+	color: #fbeaeb;
 	margin: 0;
 	padding: 20px;
 	position: relative;
-	height: 20%;
 }
 
 #main_header h1{
@@ -28,7 +27,7 @@ body{
 
 #right_aside{
 	width: 16%;
-	background-color: #333;
+	background-color: #fbeaeb;
 	margin-top: 0;
 	margin-bottom: 0;
 	float: left;
@@ -38,7 +37,7 @@ body{
 #main_content{
 	font-family: cursive;
 	float: left;
-	color: #fff;
+	color: #243665;
 	margin: 30px;
 	text-align: center;
 	width: 60%;
@@ -49,16 +48,25 @@ body{
 	height: 20px;
 }
 
+#get_results, #clear{
+	background-color: #fbeaeb;
+	border: 1px solid #243665;
+	font-family: cursive;
+	height: 30px;
+	color: #243665;
+	border-radius: 10px;
+}
+
 .button{
 	padding: 20px;
-	background-color: teal;
+	background-color: #8aaae5;
 	font-family: cursive;
 	color: #fff;
 	border-radius: 50px;
 	width: 200px;
 	height: 90px;
 	margin: 15px;
-	border: 2px solid #7db395;
+	border: 2px solid #243665;
 }
 
 .button p{
@@ -75,5 +83,5 @@ body{
 
 .button:hover, #active{
 	background-color: #fff;
-	color: teal;
+	color: #243665;
 }
