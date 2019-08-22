@@ -8,10 +8,16 @@
 	<div id="main_body">
 	<header>
 		<div id="main_header">
+			<img src="../logo2.jpg" alt="logo" width="50" height="50">
 			<h1>Calc-4-All</h1>
-			<p>
-				Calc-4-All is a free online calculator. Here you will find Math, Trigonometry, BMI, Interest and Unit Conversions calculators. We give a little brief of the calculations. If you don't find what you need, we are always happy to consider requests for new calculators or additional features and information. Contact us for Calculator Requests and Suggestions.
-			</p>
+			<ul>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Join Us</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+			<marquee id="text">
+				Calc-4-All is a free online calculator. Here you will find Basic Arithmetic, Trigonometry, BMI, Interest and Unit Conversion calculators. Enjoy!!!
+			</marquee>
 		</div>		
 	</header>
 	<aside>
@@ -60,7 +66,7 @@
 		    		<label for="status">BMI Status</label>
 		    		<input name="display_2" id="display_status" value="" class="sys_response">
 		    		<br>
-		    		<input type="button" id="clear" class="u_entry" value="Clear Display" onclick="clear_display()">
+		    		<input type="button" id="clear_display" class="u_entry" value="Clear Display" onclick="clear_display()">
 		    		<br>
 	    		</form>
 	    	</div>
@@ -72,6 +78,12 @@
 	    	</div>
 	    </div>
 	</aside>
+	<div id="clear"></div>
+		<footer>
+			<div id="footer">
+				<p>&copy;2019 Innovators</p>
+			</div>
+		</footer>
 </div>
 <script type="text/javascript" src="..\js_files\bmi.js"></script>
 </body>

@@ -8,11 +8,17 @@
 	<div id="main_body">
 	<header>
 		<div id="main_header">
+			<img src="../logo2.jpg" alt="logo" width="50" height="50">
 			<h1>Calc-4-All</h1>
-			<p>
-				Calc-4-All is a free online calculator. Here you will find Math, Trigonometry, BMI, Interest and Unit Conversions calculators. We give a little brief of the calculations. If you don't find what you need, we are always happy to consider requests for new calculators or additional features and information. Contact us for Calculator Requests and Suggestions.
-			</p>
-		</div>	
+			<ul>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Join Us</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+			<marquee id="text">
+				Calc-4-All is a free online calculator. Here you will find Basic Arithmetic, Trigonometry, BMI, Interest and Unit Conversion calculators. Enjoy!!!
+			</marquee>
+		</div>		
 	</header>
 	<aside>
 		<div id="right_aside">
@@ -47,24 +53,37 @@
 
 		<h4>Area Unit Converter</h4>
 		<label for="selectArea">Select Your Conversion Option</label>
-		<input type="select" name="select" id="selectArea">
+		<select class="choose">
+			<option class="option">Hectares - Acres</option>
+			<option class="option">Acres - Hectares</option>
+			<option class="option">Square km - Square miles</option>
+			<option class="option">Square miles - Square km</option>
+		</select>
 	</div>
 	<aside>
 		<div id="left_aside">
-			<a href="">Area</a>
-			<br>
-			<a href="">Distance</a>
-			<br>
-			<a href="">Mass</a>
-			<br>
-			<a href="">Temperature</a>
-			<br>
-			<a href="">Time</a>
-			<br>
-			<a href="">Volume</a>
-			<br>		
+			<p>Which quantity do you want a conversion for?</p>
+			<ul>
+				<li><a href="#" class="current">Area</a></li>
+				<br>
+				<li><a href="#">Distance</a></li>
+				<br>
+				<li><a href="#">Mass</a></li>
+				<br>
+				<li><a href="#">Temperature</a></li>
+				<br>
+				<li><a href="#">Time</a></li>
+				<br>
+				<li><a href="#">Volume</a></li>
+			</ul>		
 		</div>
 	</aside>
+	<div id="clear"></div>
+	<footer>
+		<div id="footer">
+			<p>&copy;2019 Innovators</p>
+		</div>
+	</footer>
 </div>
 <script type="text/javascript" src="..\js_files\unit.js"></script>
 </body>
