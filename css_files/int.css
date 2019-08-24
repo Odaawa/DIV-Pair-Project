@@ -109,6 +109,18 @@ body{
 	width: 60%;
 }
 
+/*dropdown list for compounding*/
+#compound_options, option, #user_options{
+	background-color: #fbeaeb;
+	font-family: cursive; 
+	color: #243665;
+}
+
+#compound_options, #user_options{
+	height: 35px;
+	margin: 10px;
+}
+
 form{
 	position: absolute;
     top: 50px;

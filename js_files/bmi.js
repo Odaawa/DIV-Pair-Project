@@ -4,7 +4,6 @@ const bmi_calc = function(mass, height){
 	const result= mass/Math.pow(height,2);
 	const bmi_index = result.toFixed(1);//toFixed() method reduces number of dp to what is specified in the brackets
 
-
 //this would require js to look through html file, identify display_1 under bmi and assign bmi_index to value
 //user would then see bmi_index value in display area 1
     document.bmi.display_1.value = bmi_index;
@@ -36,7 +35,7 @@ const bmi_calc = function(mass, height){
     
 }
 
-function clear_display(){
+function clearDisplay(){
 	document.bmi.display_1.value = "";
 	document.bmi.display_2.value = "";
 	document.bmi.height.value = "";

@@ -45,6 +45,39 @@
 			</button>
 	    </div>
 	</aside>
+	<main>
+		<div id="content">
+			<form name="case">
+			    <input name="display" id="display" value=""> <!-- this is display area -->
+
+			    <input type="button" class="digit" value="one" onclick="run1()"> <!-- value is for what appears on button -->
+			    <input type="button" class="digit" value="two" onclick="run2()">
+			    <input type="button" class="digit" value="three" onclick="run3()">
+			    <input type="button" id="plus" 	class="oper" 	value="+"  onclick="runPlus()">
+
+			    <input type="button" class="digit" value="four" onclick="run4()">
+			    <input type="button" class="digit" value="five" onclick="run5()">
+			    <input type="button" class="digit" value="six" onclick="run6()">
+			    <input type="button" id="minus" 	class="oper" 	value="-" onclick="runMinus()" >
+
+			    <input type="button" class="digit" value="seven" onclick="run7()">
+			    <input type="button" class="digit" value="eight" onclick="run8()">
+			    <input type="button" class="digit" value="nine" onclick="run9()">
+			    <input type="button" id="divide" 	class="oper" 	value="/" onclick="runDivide()" >
+			    
+			    <input type="button" class="digit" value="zero" onclick="run0()">
+			    <input type="button" id="clearMem" class="oper" value="C" onclick="runC()">
+			  	<input type="button" id="equal" 	class="oper"	value="=" onclick="runEquals()">
+			    <input type="button" id="multiply" 	class="oper" 	value="*" onclick="runMultiply()">
+
+			    <input type="button" id="openBracket" 	class="oper" 	value="(" onclick="runOpenBracket()">
+			    <input type="button" id="closeBracket" 	class="oper" 	value=")" onclick="runCloseBracket()">
+			    <input type="button" id="dot" 	class="oper" 	value="." onclick="runDot()">
+			    <input type="button" id="backspace" class="oper" value="<" onclick="runBackspace()">
+
+			  </form>			
+		</div>
+	</main>
 	<div id="clear"></div>
 		<footer>
 			<div id="footer">

@@ -109,10 +109,14 @@ body{
 	width: 60%;
 }
 
-option{
+select, option{
 	background-color: #fbeaeb;
 	font-family: cursive; 
 	color: #243665;
+}
+
+select{
+	height: 40px;
 }
 
 /*left-aside for conversion menu list*/
