@@ -5,6 +5,18 @@
     //n = compounding periods
     // var compoundingRate = document.getElementById('compound_options').value;//find out how best to do this
     // var n = compoundingRate.options[compoundingRate.selectedIndex].value;//accessing value from select menu
+
+//how to get js to access value from compounding rate options and work with it
+   // var compound_rate = document.querySelector('#compound_options');
+   // compound_rate.addEventListener('change', getCompoundingRate(){
+   //  return compound_rate.value;
+   // });
+   
+   
+
+// function setWeather(){
+//  var choice = select.value;
+
    let totalAmount = document.getElementById('displayAmount');
    let interest =document.getElementById('displayInterest');
 
@@ -30,6 +42,7 @@ swap();
 
 // calculate compound interest
 const compound = function(){
+  const n = getCompoundingRate();
   const sum = (r/n) + 1;
   const exponent = t*n;
   const sum_exponent = Math.pow(sum, exponent);
