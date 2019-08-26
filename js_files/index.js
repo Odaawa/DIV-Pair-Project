@@ -1,4 +1,3 @@
-
 //for the number buttons
 run1 = () => {document.case.display.value += "1"};
 run2 = () => {document.case.display.value += "2"};
