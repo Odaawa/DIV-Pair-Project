@@ -8,7 +8,7 @@
 	<div id="main_body">
 	<header>
 		<div id="main_header">
-			<img src="../logo2.jpg" alt="logo" width="50" height="50">
+			<a href="index.html"><img src="../logo2.jpg" alt="logo" width="50" height="50"></a>
 			<h1>Calc-4-All</h1>
 			<ul>
 				<li><a href="#">Contact Us</a></li>
@@ -48,8 +48,8 @@
 	<div id="main_content">
 		<h2>Interest Calculator</h2>
         <!-- user options -simple or compound interest -->
-        <label for="user_options" id="optionLabel_1">Choose Your Interest Option</label>
-        <select id="user_options">
+        <label for="interest_options" id="optionLabel_1">Choose Your Interest Option</label>
+        <select id="interest_options">
            	<option value="compoundInterest" id="compound">Compound Interest</option>
         	<option value="simpleInterest" id="simple">Simple Interest</option>
         </select>
@@ -75,7 +75,7 @@
 			<option value="1">Annually</option>
 		</select>
 		<br>
-        <input type="button" id="get_results" class="u_entry" value="Get Results">
+        <input type="button" id="get_results" class="u_entry" value="Get Results" onclick="answer()">
 		<br>
         <label for="displayInterest" class="label">Interest</label>
 		<input type="display" name="displayInterest" id="displayInterest" class="input">
