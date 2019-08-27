@@ -14,6 +14,7 @@ runDot = () => {document.case.display.value += "."};
 runC = () => {document.case.display.value = ""}; //clear function
 runMinus = () => {document.case.display.value += "-"};
 degrees = () => {document.case.display.value =  document.case.display.value * (Math.PI/180)};
+runSquareRoot = () => {document.case.display.value = Math.sqrt(document.case.display.value)}
 
 //for the trig operations 
 runSin = () => {document.case.display.value = Math.sin(document.case.display.value)};
