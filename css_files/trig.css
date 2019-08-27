@@ -172,13 +172,13 @@ form{
 	background-color: crimson;
 	font-family: cursive;
 	margin-right: 5px;
-	width: 20%;
+	width: 15%;
 }
 
-/*delete button*/
+/*/*delete button
 #backspace{
 	width: 20%;
-}
+}*/
 
 /*equal to button*/
 #equal {
