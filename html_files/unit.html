@@ -50,31 +50,117 @@
 		<p>
 			If you're getting confused over the SI units and their corresponding Imperial values and vice versa, you're definitely in the right place. With Calc-4-All Unit Converter, we provide you with the common SI-Imperial and Imperial-SI unit conversions to rid you of all your confusions. 
 		</p>
-
+        <div id="area" class="active">
 		<h4>Area Unit Converter</h4>
-		<select class="choose">
+		<select  class="choose" id="choose_area">
 			<option id="select_option">Select Your Conversion Option</option>
-			<option class="option">Hectares - Acres</option>
-			<option class="option">Acres - Hectares</option>
-			<option class="option">Square km - Square miles</option>
-			<option class="option">Square miles - Square km</option>
+			<option class="option" value="sq_m">Sq. meter - Sq. feet</option>
+			<option class="option" value="sq_ft">Sq. feet - Sq. meters</option>
 		</select>
+		<br>
+		<!--  input areas where user inputs value and gets output in return -->
+		<input type="number" class="user_input" step="0.01" min="0" required>
+		<input type="text" class="app_output">
+		<br>
+		<button onclick="convert()">Answer</button>	
+		</div>
+		<br>
+		<div id="distance" class="container">
+		<h4>Distance Unit Converter</h4>
+		<select class="choose" id="choose_distance">
+			<option id="select_option">Select Your Conversion Option</option>
+			<option class="option" value="m-y">Meters - Yards</option>
+			<option class="option" value="y-m">Yards - Meters</option>
+		</select>
+		<br>
+		<!-- input areas where user inputs value and gets output in return -->
+		<input type="number" class="user_input" step="0.01" min="0" required>
+		<input type="text" class="app_output">
+		<br>
+		<button onclick="convert()">Answer</button>	
+		</div>
+		<div id="mass" class="container">
+		<h4>Mass Unit Converter</h4>
+		<select class="choose" id="choose_mass">
+			<option id="select_option">Select Your Conversion Option</option>
+			<option class="option" value="kg-p">Kilograms - Pounds</option>
+			<option class="option" value="p-kg"> Pounds - Kilograms</option>
+		</select>
+		<br>
+		<!-- input areas where user inputs value and gets output in return -->
+		<input type="number" class="user_input" step="0.01" min="0" required>
+		<input type="text" class="app_output">
+		<br>
+		<button onclick="convert()">Answer</button>	
+		</div>
+		<div id="temp" class="container">
+		<h4>Temperature Unit Converter</h4>
+		<select class="choose" id="choose_temp">
+			<option id="select_option">Select Your Conversion Option</option>
+			<option class="option" value="k-c">Kelvin - Celsius</option>
+			<option class="option" value="c-k">Celsius - Kelvin</option>
+			<option class="option" value="f-k">Fahrenheit - Kelvin</option>
+			<option class="option" value="k-f">Kelvin - Fahrenheit</option>
+		</select>
+		<br>
+		<!-- input areas where user inputs value and gets output in return -->
+		<input type="number" class="user_input" step="0.01" min="0" required>
+		<input type="text" class="app_output">
+		<br>
+		<button onclick="convert()">Answer</button>	
+		</div>
+		<div id="time" class="container">
+		<h4>Time Unit Converter</h4>
+		<select class="choose" id="choose_time">
+			<option id="select_option">Select Your Conversion Option</option>
+			<option class="option" value="sec-hr">Seconds - Hours</option>
+			<option class="option" value="sec-day">Seconds - Days</option>
+			<option class="option" value="hr-sec">Hours - Seconds</option>
+		</select>
+		<br>
+		<!-- input areas where user inputs value and gets output in return -->
+		<input type="number" class="user_input" step="0.01" min="0" required>
+		<input type="text" class="app_output">
+		<br>
+		<button onclick="convert()">Answer</button>	
+		</div>
+		<div id="distance" class="container">
+		<h4>Volume Unit Converter</h4>
+		<select  class="choose" id="choose_volume">
+			<option id="select_option">Select Your Conversion Option</option>
+			<option class="option" value="l-g">Litres - Gallons</option>
+			<option class="option" value="g-l">Gallons - Litres</option>
+		</select>
+		<br>
+		<!-- input areas where user inputs value and gets output in return -->
+		<input type="number" class="user_input" step="0.01" min="0" required>
+		<input type="text" class="app_output">
+		<br>
+		<button onclick="convert()">Answer</button>	
+		</div>
+		<!-- <form> -->
+		<!-- input areas where user inputs value and gets output in return  -->
+		<!-- <input type="number" id="user_input" step="0.01" min="0" required>
+		<input type="text" id="app_output">
+		<br>
+		<button onclick="convert()">Answer</button> -->
+		<!-- </form> -->		
 	</div>
 	<aside>
 		<div id="left_aside">
 			<p>Which quantity do you want a conversion for?</p>
-			<ul>
-				<li><a href="#" class="current">Area</a></li>
+			<ul id="left-list">
+				<li class="current">Area</li>
 				<br>
-				<li><a href="#">Distance</a></li>
+				<li>Distance</li>
 				<br>
-				<li><a href="#">Mass</a></li>
+				<li>Mass</li>
 				<br>
-				<li><a href="#">Temperature</a></li>
+				<li>Temperature</li>
 				<br>
-				<li><a href="#">Time</a></li>
+				<li>Time</li>
 				<br>
-				<li><a href="#">Volume</a></li>
+				<li>Volume</li>
 			</ul>		
 		</div>
 	</aside>
