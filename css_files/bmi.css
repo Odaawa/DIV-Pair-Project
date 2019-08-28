@@ -101,12 +101,12 @@ body{
 
 /*main body where bmi calculation is*/
 #main_content{
-	font-family: cursive;
 	float: left;
 	color: #243665;
 	margin: 30px;
 	text-align: center;
 	width: 60%;
+	font-size: 18px;
 }
 
  /*input areas and display*/
@@ -121,7 +121,6 @@ body{
 #get_results, #clear_display{
 	background-color: #243665;
 	border: 2px solid #fbeaeb;
-	font-family: cursive;
 	font-weight: bold;
 	height: 35px;
 	font-size: 14px;
