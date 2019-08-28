@@ -6,33 +6,26 @@
   let totalAmount = document.getElementById('displayAmount');
   let interest =document.getElementById('displayInterest');
 
+//swap function clears compounding options when user selects simple interest option
+function swap(){
+  if(document.querySelector('#interest_options').value === 'compoundInterest'){
+    document.getElementById('compound_options').style.opacity = 1;
+    document.getElementById('optionLabel_2').style.opacity = 1;
+  }else if(document.querySelector('#interest_options').value === 'simpleInterest'){
+    document.getElementById('compound_options').style.opacity = 0;
+    document.getElementById('optionLabel_2').style.opacity = 0;
+  }
+}
+swap();
+
 //swap between simple interest and compound interest
-// function answer(){
-//   if(document.querySelector('#interest_options').value === 'compoundInterest'){
-//     compound();
-//   }else if(document.querySelector('#interest_options').value === 'simpleInterest'){
-//     simple();
-//   }
-// }//check this out, sth's not working right, remember you called answer() in html so check that too
-
-// function swap(){
-//   let option_1 = document.getElementById('compound');
-//   let option_2 = document.getElementById('simple');
-//   let button = document.getElementById('get_results');
-
-//   option_1.addEventListener('click', () => {
-//       document.getElementById('compound_options').style.opacity = 1;
-//       document.getElementById('optionLabel_2').style.opacity = 1;
-//       button.onclick = compound(); 
-//   });
-  
-//   option_2.addEventListener('click', () => {
-//       document.getElementById('compound_options').style.opacity = 0;
-//       document.getElementById('optionLabel_2').style.opacity = 0;
-//       button.onclick =simpleInterest();
-//   });
-// }
-// swap();
+function answer(){
+  if(document.querySelector('#interest_options').value === 'compoundInterest'){
+    compound();
+  }else if(document.querySelector('#interest_options').value === 'simpleInterest'){
+    simple();
+  }
+}
 
 
 //for the compounding options selector
