@@ -101,17 +101,33 @@ body{
 
 /*main area for conversions*/
 #main_content{
-	font-family: cursive;
 	float: left;
 	color: #243665;
 	margin: 30px;
 	text-align: center;
 	width: 60%;
+	font-size: 18px;
+}
+
+.container{
+	margin-left: 250px;
+	position: absolute;
+	visibility: hidden;
+}
+
+.active{
+	visibility: visible;
+	position: absolute;
+	margin-left: 250px;
+}
+
+input{
+	margin-top: 110px;
 }
 
 select, option{
 	background-color: #fbeaeb;
-	font-family: cursive; 
+	/*font-family: cursive;*/ 
 	color: #243665;
 }
 
@@ -123,7 +139,7 @@ select{
 #left_aside{
 	background-color: #fbeaeb;
 	float: left;
-	font-family: cursive;
+	font-size: 20px;
 	height: 350px;
 	width: 200px;
 	margin-top: 7%;
@@ -144,14 +160,14 @@ select{
 	list-style: none;
 }
 
-#left_aside a{
-	text-decoration: none;
-	margin-left: 20px;
-	padding: 20px;
+#left_aside li{
+	padding: 0;
 	color: #243665;
+	margin: 0;
+	cursor: pointer;
 }
 
-#left_aside a:hover, #left_aside .current{
+#left_aside li:hover, #left_aside .current{
 	color: #8aaae5;
 }
 
