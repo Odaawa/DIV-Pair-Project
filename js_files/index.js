@@ -1,3 +1,12 @@
+//for contact us form
+var modal = document.getElementById('contact_us'); 
+        window.onclick = function(event) { 
+            if (event.target == modal) { 
+                modal.style.display = "none"; 
+            } 
+} 
+
+
 //for the number buttons
 run1 = () => {document.case.display.value += "1"};
 run2 = () => {document.case.display.value += "2"};

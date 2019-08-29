@@ -109,22 +109,6 @@ body{
 	font-size: 18px;
 }
 
-.container{
-	margin-left: 250px;
-	position: absolute;
-	visibility: hidden;
-}
-
-.active{
-	visibility: visible;
-	position: absolute;
-	margin-left: 250px;
-}
-
-input{
-	margin-top: 110px;
-}
-
 select, option{
 	background-color: #fbeaeb;
 	/*font-family: cursive;*/ 
@@ -133,6 +117,32 @@ select, option{
 
 select{
 	height: 40px;
+	margin-bottom: 35px;
+}
+
+input{
+	margin-bottom: 20px;
+}
+
+#main_content h4{
+	font-size: 20px;
+}
+
+/*answer button*/
+#answer, #clear_display{
+	background-color: #243665;
+	border: 2px solid #fbeaeb;
+	font-weight: bold;
+	height: 35px;
+	font-size: 14px;
+	color: #8aaae5;
+	border-radius: 15px;
+	margin: 15px;
+}
+
+#answer:hover, #clear_display:hover{
+	background-color: #8aaae5;
+	color: #243665;
 }
 
 /*left-aside for conversion menu list*/
@@ -167,7 +177,12 @@ select{
 	cursor: pointer;
 }
 
-#left_aside li:hover, #left_aside .current{
+#left_aside a{
+	text-decoration: none;
+	color: #243665;
+}
+
+#left_aside a:hover, #left_aside .current{
 	color: #8aaae5;
 }
 

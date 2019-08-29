@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc-4-All</title>
+	<link rel="stylesheet" type="text/css" href="..\css_files\area.css">
+</head>
+<body>
+	<div id="main_body">
+	<header>
+		<div id="main_header">
+			<a href="index.html"><img src="../logo2.jpg" alt="logo" width="50" height="50"></a>
+			<h1>Calc-4-All</h1>
+			<marquee id="text">
+				Calc-4-All is a free online calculator. Here you will find Basic Arithmetic, Trigonometry, BMI, Interest and Unit Conversion calculators. Enjoy!!!
+			</marquee>
+		</div>		
+	</header>
+	<aside>
+		<div id="right_aside">
+			<button class="button">
+				<a href="index.html">Basic Calc</a>
+				<p> +, -, /, *</p>
+			</button>
+			<button class="button" id="active">
+				<a href="area.html">Unit Converter</a>
+				<p> Imperial - SI</p>
+				<p> SI - Imperial</p>
+			</button>
+			<button class="button">
+				<a href="bmi.html">BMI Calc</a>
+				<p>Check out your BMI Status</p>
+			</button>
+			<button class="button">
+				<a href="trig.html">Trig</a>
+				<p>cos, sin, tan</p>
+			</button>
+			<button class="button">
+			<a href="int.html">Interest Finder</a>
+				<p>Find out how much your savings is worth</p>
+			</button>
+	    </div>
+	</aside>
+	<div id="main_content">
+		<h2>Unit Converter</h2>
+		<p>
+			If you're getting confused over the SI units and their corresponding Imperial values and vice versa, you're definitely in the right place. With Calc-4-All Unit Converter, we provide you with the common SI-Imperial and Imperial-SI unit conversions to rid you of all your confusions. 
+		</p>        
+		<h4>Area Unit Converter</h4>
+		<select  class="choose" id="choose_area">
+			<option id="select_option">Select Your Conversion Option</option>
+			<option class="option" value="sq_m">Sq. meter - Sq. feet</option>
+			<option class="option" value="sq_ft">Sq. feet - Sq. meters</option>
+		</select>
+		<br>
+		<!--  input areas where user inputs value and gets output in return -->
+		<input type="number" class="user_input" step="0.01" min="0" required>
+		<input type="text" class="app_output">
+		<br>
+		<button onclick="convert()" id="answer">Get Results</button>	
+		<button onclick="clear_display()" id="clear_display">Clear Display</button>			
+	</div>
+	<aside>
+		<div id="left_aside">
+			<ul id="left-list">
+				<br>
+				<li><a href="area.html" class="current">Area</a></li>
+				<br>
+				<li><a href="distance.html">Distance</a></li>
+				<br>
+				<li><a href="mass.html">Mass</a></li>
+				<br>
+				<li><a href="temp.html">Temperature</a></li>
+				<br>
+				<li><a href="time.html">Time</a></li>
+				<br>
+				<li><a href="volume.html">Volume</a></li>
+			</ul>		
+		</div>
+	</aside>
+	<div id="clear"></div>
+	<footer>
+		<div id="footer">
+			<p>&copy;2019 Innovators</p>
+		</div>
+	</footer>
+</div>
+<script type="text/javascript" src="..\js_files\area.js"></script>
+</body>
+</html>
