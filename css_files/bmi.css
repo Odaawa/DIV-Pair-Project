@@ -109,10 +109,28 @@ body{
 	font-size: 18px;
 }
 
+/*divs containing labels and form inputs*/
+#input_label1, #input_label2, .input{
+	float: left;
+	padding: 19px;
+	
+}
+
+/*label divs only*/
+#input_label1, #input_label2{
+	padding: 20px;
+	font-size: 19px;
+    margin-left: 270px;
+}
+
+/*label for user inputs*/
+#input_label1{
+	margin-left: 310px;
+}
+
  /*input areas and display*/
 .u_entry, .sys_response{
-	margin: 10px;
-	height: 20px;
+	height: 22px;
 	border: none;
 	background-color: #fbeaeb; 
 }
@@ -126,6 +144,7 @@ body{
 	font-size: 14px;
 	color: #8aaae5;
 	border-radius: 15px;
+	margin: 20px;
 }
 
 #get_results:hover, #clear_display:hover{
@@ -133,8 +152,26 @@ body{
 	color: #243665;
 }
 
+/*right aside with bmi text*/
+#left_aside{
+	background-color: #fbeaeb;
+	float: left;
+	font-size: 20px;
+	min-height: 500px;
+	width: 200px;
+	margin: 0;
+	margin-top: 35px;
+	margin-left: 18px;
+	border: 2px dotted #243665;
+	text-align: center;
+	padding: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #243665;
+}
+
 /*clears floats so that footer comes to the bottom*/
-#clear{
+.clear{
 	clear: both;
 }
 
@@ -151,12 +188,3 @@ body{
 	padding: 5px;
 	text-align: center;
 }
-
-
-/*.invalid{
-	border-color: green;
-}
-
-#error{
-	color: red;
-}*/

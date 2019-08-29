@@ -43,7 +43,7 @@
 	<div id="main_content">
 		<h2>Unit Converter</h2>
 		<p>
-			If you're getting confused over the SI units and their corresponding Imperial values and vice versa, you're definitely in the right place. With Calc-4-All Unit Converter, we provide you with the common SI-Imperial and Imperial-SI unit conversions to rid you of all your confusions. 
+			Metric - Imperial and Imperial - Metric Conversion Calculator
 		</p>        
 		<h4>Volume Unit Converter</h4>
 		<select  class="choose" id="choose_volume">
@@ -53,10 +53,13 @@
 		</select>
 		<br>
 		<!-- input areas where user inputs value and gets output in return -->
+		<label>Convert:</label>
 		<input type="number" class="user_input" step="0.01" min="0" required>
+		<label>To:</label>
 		<input type="text" class="app_output">
 		<br>
 		<button onclick="convert()" id="answer">Get Results</button>	
+		<br>
 		<button onclick="clear_display()" id="clear_display">Clear Display</button>			
 	</div>
 	<aside>

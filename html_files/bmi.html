@@ -39,41 +39,55 @@
 				<p>Find out how much your savings is worth</p>
 			</button>
 	    </div>
-	    <div id="main_content">
-	    	<h2>BMI Calculator</h2>
-	    	<p>
-	    	Body Mass Index, BMI is an easy way to estimate your total body fat. BMI is dependent on your height and weight and helps to determine if your weight is healthy enough for your height.<br>
-	    	The greater your BMI, the more body fat you have. Having a high amount of body fat puts you at risk of health problems such as cancer, diabetes and heart disease.
-	        </p>
-	    	<div id="bmi_form">
-	    		<form name="bmi">
-		    		<label for="height">Height(m)</label>
+	</aside>
+    <div id="main_content">
+    	<h2>BMI Calculator</h2>
+    	<div id="bmi_form">
+    		<form name="bmi">
+    			<div id="input_label1">
+	    			<label for="height">Height(m)</label>	
+	    			<br><br><br>
+	    			<label for="weight">Weight(kg)</label>
+	    			<br>
+    			</div>
+	    		<div class="input">
 		    		<input type="number" name="height" id="height_m" class="u_entry" min="0" placeholder="1.00" step="0.01">
-		    		<br>
-		    		<label for="weight">Weight(kg)</label>
+		    		<br><br><br>
 		    		<input type="number" name="mass" id="weight_kg" class="u_entry" min="0" placeholder="1.00" step="0.01">
-		    		<br>
-		    		<input type="button" id="get_results" 	class="u_entry"	value="Get Results" onclick="bmi_calc()">
-		    		<br>
-		    		<label for="index">Body Mass Index</label>
-		    		<input name="display_1" id="display_bmi" value="" class="sys_response" maxlength="5">
-		    		<br>
-		    		<label for="status">BMI Status</label>
+		    		<br>		
+	    		</div>
+	    		<div class="clear"></div>
+	    		<input type="button" id="get_results" 	class="u_entry"	value="Get Results" onclick="bmi_calc()">
+		    	<br>		    
+	    		<div id="input_label2">
+	    			<label for="index">Body Mass Index</label>
+	    			<br><br><br>
+	    			<label for="status">BMI Status</label>
+	    			<br>
+	    		</div>
+	    		<div class="input">
+	    			<input name="display_1" id="display_bmi" value="" class="sys_response" maxlength="5">
+		    		<br><br><br>	    		
 		    		<input name="display_2" id="display_status" value="" class="sys_response">
 		    		<br>
-		    		<input type="button" id="clear_display" class="u_entry" value="Clear Display" onclick="clearDisplay()">
-		    		<br>
-	    		</form>
-	    	</div>
-	    	<div id="status_text"></div>
-	    	<div id="extra_text">
-	    		<p>
-	    		BMI has its own limitations: the body fat of body-builders with high muscle mass may be over-estimated by BMI and that of older persons may also be under-estimated as they have lost muscle mass, so do well to consult your medical provider.
-	    	    </p>
-	    	</div>
-	    </div>
-	</aside>
-	<div id="clear"></div>
+	    		</div>
+	    		<div class="clear"></div>
+	    		<input type="button" id="clear_display" class="u_entry" value="Clear Display" onclick="clearDisplay()">
+		    	<br>
+    		</form>
+    	</div>
+    	<div id="status_text"></div>
+    </div>
+    <div id="left_aside">
+    		<p>
+		    	Body Mass Index, BMI is an estimation of total body fat.<br> BMI is dependent on height and weight.<br>
+		    	The greater your BMI, the more body fat you have. 
+		    	<br><br>
+    		    BMI has its own limitations: the body fat of body-builders with high muscle mass may be over-estimated by BMI and that of older persons may also be under-estimated as they have lost muscle mass, so do well to consult your medical provider.
+        	</p>
+    </div>
+	
+	<div class="clear"></div>
 		<footer>
 			<div id="footer">
 				<p>&copy;2019 Innovators</p>

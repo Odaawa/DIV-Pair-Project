@@ -101,7 +101,8 @@ body{
 
 /*main area with the calculation stuff*/
 #main_content{
-	font-family: cursive;
+	font-family: Garamond;
+	font-size: 20px;
 	float: left;
 	color: #243665;
 	margin: 30px;
@@ -112,13 +113,14 @@ body{
 /*dropdown list for compounding*/
 #compound_options, option, #interest_options{
 	background-color: #fbeaeb;
-	font-family: cursive; 
+	font-family: Garamond; 
 	color: #243665;
+	font-size: 16px;
 }
 
 #compound_options, #interest_options{
-	height: 35px;
-	margin: 10px;
+	height: 30px;
+	margin-bottom: 20px;
 }
 
 form{
@@ -135,14 +137,28 @@ form{
 	border: 4px #000;
 	border-radius: 50px 50px 50px 50px;
 	outline: 0;
-	font-size: 16px;
+	font-size: 18px;
 	vertical-align: baseline;
 	background: #555;
 }
 
+.input_area, #label1, #label2{
+	float: left;
+}
+
+#label1{
+	margin-left: 260px;
+	margin-right: 20px;
+}
+ 
+#label2{
+	margin-left: 370px;
+	margin-right: 50px;
+}
+
 /*input areas and display*/
 .input{
-	margin: 10px; 
+	margin-bottom: 20px; 
 	height: 20px;
 	border: none;
 	background-color: #fbeaeb;
@@ -152,13 +168,13 @@ form{
 #get_results, #clear_display{
 	background-color: #243665;
 	border: 2px solid #fbeaeb;
-	font-family: cursive;
+	font-family: Garamond;
 	font-weight: bold;
 	height: 35px;
-	font-size: 14px;
+	font-size: 18px;
 	color: #8aaae5;
 	border-radius: 15px;
-	margin: 15px;
+	margin-bottom: 20px;
 }
 
 #get_results:hover, #clear_display:hover{
@@ -167,7 +183,7 @@ form{
 }
 
 /*clears floats so that footer comes to the bottom*/
-#clear{
+.clear{
 	clear: both;
 }
 
