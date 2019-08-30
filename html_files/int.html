@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc-4-All</title>
+	<link rel="stylesheet" type="text/css" href="..\css_files\int.css">
+</head>
+<body>
+	<div id="main_body">
+	<header>
+		<div id="main_header">
+			<a href="index.html"><img src="../logo2.jpg" alt="logo" width="50" height="50"></a>
+			<h1>Calc-4-All</h1>
+			<marquee id="text">
+				Calc-4-All is a free online calculator. Here you will find Basic Arithmetic, Trigonometry, BMI, Interest and Unit Conversion calculators. Enjoy!!!
+			</marquee>
+		</div>			
+	</header>
+	<aside>
+		<div id="right_aside">
+			<button class="button">
+				<a href="index.html">Basic Calc</a>
+				<p> +, -, /, *</p>
+			</button>
+			<button class="button">
+				<a href="area.html">Unit Converter</a>
+				<p> Imperial - SI</p>
+				<p> SI - Imperial</p>
+			</button>
+			<button class="button">
+				<a href="bmi.html">BMI Calc</a>
+				<p>Check out your BMI Status</p>
+			</button>
+			<button class="button">
+				<a href="trig.html">Trig</a>
+				<p>cos, sin, tan</p>
+			</button>
+			<button class="button" id="active">
+			<a href="int.html">Interest Finder</a>
+				<p>Find out how much your savings is worth</p>
+			</button>
+	    </div>
+	</aside>
+	<div id="main_content">
+		<h2>Interest Calculator</h2>
+        <!-- user options -simple or compound interest -->
+        <div id="label1">
+        	<label for="interest_options" id="optionLabel_1">Choose Your Interest Option</label>
+        	<br><br>
+        	<label for="principal" class="label">Principal</label>
+        	<br><br>
+        	<label for="rate" class="label">Rate(%)</label>
+        	<br><br>
+        	<label for="time" class="label">Time</label>
+        	<br><br>
+        	<label for="compound_options" id="optionLabel_2">Select Your Compounding Option</label>
+        	<br><br>
+        </div>
+        <div class="input_area">
+	        <select id="interest_options">
+	           	<option value="compoundInterest" id="compound">Compound Interest</option>
+	        	<option value="simpleInterest" id="simple">Simple Interest</option>
+	        </select>
+	        <br>
+			<input type="number" name="principal" id="principal" min="5" class="input" step="0.01">
+			<br>			
+			<input type="number" name="rate" id="rate" min="1" max="100" class="input" step="0.01">
+			<br>			
+			<input type="number" name="time" id="time" min="1" max="100" class="input"step="0.1">
+			<br>			
+			<select id="compound_options">
+				<option value="365">Daily(365/year)</option>
+				<option value="52">Weekly(52/year)</option>
+				<option value="26">Bi-weekly(26/year)</option>
+				<option value="12">Monthly(12/year)</option>
+				<option value="6">Bi-monthly(6/year)</option>
+				<option value="4">Quarterly(4/year)</option>
+				<option value="2">Semi-annually(2/year)</option>
+				<option value="1">Annually</option>
+			</select>
+			<br>
+		</div>
+		<div class="clear"></div>
+		<input type="button" id="get_results" class="u_entry" value="Get Results" onclick="answer()">
+		<br>
+		<div id="label2">
+			<label for="displayInterest" class="label">Interest</label>	
+			<br><br>
+			<label for="displayAmount" class="label">Total Amount</label>
+			<br><br>
+		</div>
+        <div class="input_area">     
+			<input type="display" name="displayInterest" id="displayInterest" class="input">
+			<br>			
+			<input type="display" name="displayAmount" id="displayAmount" class="input">
+			<br>
+		</div>
+		<div class="clear"></div>
+		<input type="button" id="clear_display" class="u_entry" value="Clear Display" onclick="clear_display()">
+		<br>
+	</div>
+	<div class="clear"></div>
+		<footer>
+			<div id="footer">
+				<p>&copy;2019 Innovators</p>
+			</div>
+		</footer>
+</div>
+<script type="text/javascript" src="..\js_files\int.js"></script>
+</body>
+</html>

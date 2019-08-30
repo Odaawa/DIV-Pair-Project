@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc-4-All</title>
+	<link rel="stylesheet" type="text/css" href="..\css_files\trig.css">
+</head>
+<body>
+	<div id="main_body">
+	<header>
+		<div id="main_header">
+			<a href="index.html"><img src="../logo2.jpg" alt="logo" width="50" height="50"></a>
+			<h1>Calc-4-All</h1>
+			<marquee id="text">
+				Calc-4-All is a free online calculator. Here you will find Basic Arithmetic, Trigonometry, BMI, Interest and Unit Conversion calculators. Enjoy!!!
+			</marquee>
+		</div>		
+	</header>
+	<aside>
+		<div id="right_aside">
+			<button class="button">
+				<a href="index.html">Basic Calc</a>
+				<p> +, -, /, *</p>
+			</button>
+			<button class="button">
+				<a href="area.html">Unit Converter</a>
+				<p> Imperial - SI</p>
+				<p> SI - Imperial</p>
+			</button>
+			<button class="button">
+				<a href="bmi.html">BMI Calc</a>
+				<p>Check out your BMI Status</p>
+			</button>
+			<button class="button" id="active">
+				<a href="trig.html">Trig</a>
+				<p>cos, sin, tan</p>
+			</button>
+			<button class="button">
+			<a href="int.html">Interest Finder</a>
+				<p>Find out how much your savings is worth</p>
+			</button>
+	    </div>
+	</aside>
+	<main>
+		<div id="content">
+			<form name="case">
+			    <input name="display" id="display" value=""> <!-- this is display area -->
+			    <br>
+			    <input type="button" id="sin" 	class="trig_oper" 	value="sin"  onclick="runSin()">
+			    <input type="button" id="cos" 	class="trig_oper" 	value="cos"  onclick="runCos()">
+			    <input type="button" id="tan" 	class="trig_oper" 	value="tan"  onclick="runTan()">
+			    <br>
+			    <input type="button" id="arcsin" 	class="trig_oper" 	value="asin"  onclick="runArcSin()">
+			    <input type="button" id="arccos" 	class="trig_oper" 	value="acos"  onclick="runArcCos()">
+			    <input type="button" id="arctan" 	class="trig_oper" 	value="atan"  onclick="runArcTan()">
+			    <br>
+			    <input type="button" id="sinh" 	class="trig_oper" 	value="sinh"  onclick="runSinh()">
+			    <input type="button" id="cosh" 	class="trig_oper" 	value="cosh"  onclick="runCosh()">
+			    <input type="button" id="tanh" 	class="trig_oper" 	value="tanh"  onclick="runTanh()">
+			    <br>
+			    <input type="button" class="digit" value="1" onclick="run1()"> <!-- value is for what appears on button -->
+			    <input type="button" class="digit" value="2" onclick="run2()">
+			    <input type="button" class="digit" value="3" onclick="run3()">
+			    <input type="button" class="oper" value="deg" onclick="degrees()">
+			    <br>
+			    <input type="button" class="digit" value="4" onclick="run4()">
+			    <input type="button" class="digit" value="5" onclick="run5()">
+			    <input type="button" class="digit" value="6" onclick="run6()">
+			    <input type="button" id="dot" 	class="oper" 	value="." onclick="runDot()">
+			    <br>
+			    <input type="button" class="digit" value="7" onclick="run7()">
+			    <input type="button" class="digit" value="8" onclick="run8()">
+			    <input type="button" class="digit" value="9" onclick="run9()">
+			    <input type="button" id="minus" 	class="oper" 	value="-" onclick="runMinus()" >
+			    <br>
+			    <input type="button" id="clearMem" class="oper" value="C" onclick="runC()">
+			    <input type="button" class="digit" value="0" onclick="run0()">
+			    <input type="button" id="square_root" class="oper" value="√" onclick="runSquareRoot()">	    
+			    <input type="button" id="backspace" class="oper" value="<" onclick="runBackspace()">
+
+			  </form>			
+		</div>
+	</main>
+	<div id="clear"></div>
+		<footer>
+			<div id="footer">
+				<p>&copy;2019 Innovators</p>
+			</div>
+		</footer>
+</div>
+<script type="text/javascript" src="..\js_files\trig.js"></script>
+</body>
+</html>

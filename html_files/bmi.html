@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc-4-All</title>
+	<link rel="stylesheet" type="text/css" href="..\css_files\bmi.css">
+</head>
+<body>
+	<div id="main_body">
+	<header>
+		<div id="main_header">
+			<a href="index.html"><img src="../logo2.jpg" alt="logo" width="50" height="50"></a>
+			<h1>Calc-4-All</h1>
+			<marquee id="text">
+				Calc-4-All is a free online calculator. Here you will find Basic Arithmetic, Trigonometry, BMI, Interest and Unit Conversion calculators. Enjoy!!!
+			</marquee>
+		</div>		
+	</header>
+	<aside>
+		<div id="right_aside">
+			<button class="button">
+				<a href="index.html">Basic Calc</a>
+				<p> +, -, /, *</p>
+			</button>
+			<button class="button">
+				<a href="area.html">Unit Converter</a>
+				<p> Imperial - SI</p>
+				<p> SI - Imperial</p>
+			</button>
+			<button class="button" id="active">
+				<a href="bmi.html">BMI Calc</a>
+				<p>Check out your BMI Status</p>
+			</button>
+			<button class="button">
+				<a href="trig.html">Trig</a>
+				<p>cos, sin, tan</p>
+			</button>
+			<button class="button">
+			<a href="int.html">Interest Finder</a>
+				<p>Find out how much your savings is worth</p>
+			</button>
+	    </div>
+	</aside>
+    <div id="main_content">
+    	<h2>BMI Calculator</h2>
+    	<div id="bmi_form">
+    		<form name="bmi">
+    			<div id="input_label1">
+	    			<label for="height">Height(m)</label>	
+	    			<br><br><br>
+	    			<label for="weight">Weight(kg)</label>
+	    			<br>
+    			</div>
+	    		<div class="input">
+		    		<input type="number" name="height" id="height_m" class="u_entry" min="0" placeholder="1.00" step="0.01">
+		    		<br><br><br>
+		    		<input type="number" name="mass" id="weight_kg" class="u_entry" min="0" placeholder="1.00" step="0.01">
+		    		<br>		
+	    		</div>
+	    		<div class="clear"></div>
+	    		<input type="button" id="get_results" 	class="u_entry"	value="Get Results" onclick="bmi_calc()">
+		    	<br>		    
+	    		<div id="input_label2">
+	    			<label for="index">Body Mass Index</label>
+	    			<br><br><br>
+	    			<label for="status">BMI Status</label>
+	    			<br>
+	    		</div>
+	    		<div class="input">
+	    			<input name="display_1" id="display_bmi" value="" class="sys_response" maxlength="5">
+		    		<br><br><br>	    		
+		    		<input name="display_2" id="display_status" value="" class="sys_response">
+		    		<br>
+	    		</div>
+	    		<div class="clear"></div>
+	    		<input type="button" id="clear_display" class="u_entry" value="Clear Display" onclick="clearDisplay()">
+		    	<br>
+    		</form>
+    	</div>
+    	<div id="status_text"></div>
+    </div>
+    <div id="left_aside">
+    		<p>
+		    	Body Mass Index, BMI is an estimation of total body fat.<br> BMI is dependent on height and weight.<br>
+		    	The greater your BMI, the more body fat you have. 
+		    	<br><br>
+    		    BMI has its own limitations: the body fat of body-builders with high muscle mass may be over-estimated by BMI and that of older persons may also be under-estimated as they have lost muscle mass, so do well to consult your medical provider.
+        	</p>
+    </div>
+	
+	<div class="clear"></div>
+		<footer>
+			<div id="footer">
+				<p>&copy;2019 Innovators</p>
+			</div>
+		</footer>
+</div>
+<script type="text/javascript" src="..\js_files\bmi.js"></script>
+</body>
+</html>
